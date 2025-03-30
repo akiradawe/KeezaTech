@@ -1,0 +1,74 @@
+<!-- views/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - KezaTech</title>
+    <link rel="icon" type="image/favicon.png" href="/images/favicon.png">
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <!-- Include Navigation Bar -->
+    <%- include('nav.html') %>
+
+    <!-- Banner Section with Hero Content -->
+    <section class="banner">
+      <div class="banner-content">
+        <img src="/images/gallery/banner.webp" alt="KeezaTech Banner">
+        <div class="hero-content">
+          <h1>Welcome to KezaTech</h1>
+          <p>Innovative Solutions for Tomorrow's Technology</p>
+          <a href="/contact" class="cta-button">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+      <div class="intro-content">
+        <h2>Why choose KeezaTech?</h2>
+        <p>At KeezaTech, we are passionate about transforming healthcare through innovative, AI-driven solutions. Our commitment to advancing telemedicine, medical imaging, data analytics, and predictive solutions positions us at the forefront of healthcare innovation.</p>
+      </div>
+    </section>
+
+    <!-- Feature Boxes Section -->
+    <section class="feature-boxes">
+      <div class="feature-boxes-container">
+        <div class="feature-box">
+          <div class="feature-image">
+            <img src="/images/gallery/KeezaTech_Image1.webp" alt="AI Medical Imaging">
+          </div>
+          <div class="feature-content">
+            <h2>KeezaTech Teleradiology-as-a-Service</h2>
+            <p>The shortage of Radiologists is a prime example. In developed countries, an average of 9 to 11 Radiologists per 100,000 population is considered acceptable. In Rwanda, there is an average of 1 Radiologist per 1,000,000 population.</p>
+            <a href="/services" class="feature-button">Learn More</a>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-image">
+            <img src="/images/gallery/KeezaTech_Image2.webp" alt="Gain Confidence">
+          </div>
+          <div class="feature-content">
+            <h2>Gain Confidence</h2>
+            <p>Imagine a healthcare environment where AI tools empower every clinician to make accurate diagnoses without delay. Our AI-driven technology not only enhances diagnostic capabilities but also streamlines workflows, allowing healthcare providers to focus more on patient care.</p>
+            <a href="/services" class="feature-button">Learn More</a>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-image">
+            <img src="/images/gallery/KeezaTech_Image3.webp" alt="Patient Care">
+          </div>
+          <div class="feature-content">
+            <h2>Patient Care at the Forefront</h2>
+            <p>Patients will no longer face long delays for Radiology results. With instant diagnoses and treatment plans, stress is alleviated, and critical conditions are promptly addressed. Together, we can ensure a healthcare experience where speed and accuracy work hand in hand.</p>
+            <a href="/services" class="feature-button">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Include Footer -->
+    <%- include('footer.ejs') %>
+  </body>
+</html>

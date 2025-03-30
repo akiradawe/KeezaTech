@@ -1,0 +1,53 @@
+<!-- views/contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - KezaTech</title>
+    <link rel="icon" type="image/favicon.png" href="/images/favicon.png">
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Include Navigation Bar -->
+    <%- include('nav.html') %>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+      <div class="contact-hero-content">
+        <h2>Contact Us</h2>
+        <p><strong>Get in touch with our team</strong> </p>
+        <div class="address">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Location: Norrsken – Kigali – Rwanda</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Box Section -->
+    <section class="contact-box-section">
+      <div class="contact-box">
+        <div class="contact-content">
+          <h2>General Inquiries</h2>
+          <p>Have a question or need to get in touch with us? For any general inquiries about our company, products, or services, please reach out to us. We are here to provide you with the information and support you require.</p>
+        </div>
+        <div class="contact-icons">
+          <div class="contact-icon">
+            <a href="mailto:info@keezatech.rw">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <div class="contact-icon">
+            <a href="tel:+250785540835">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Include Footer -->
+    <%- include('footer.ejs') %>
+  </body>
+</html>

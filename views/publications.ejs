@@ -1,0 +1,413 @@
+<!-- views/about.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications - KezaTech</title>
+    <link rel="icon" type="image/favicon.png" href="/images/favicon.png">
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="/js/publication.js" defer></script>
+  </head>
+  <body>
+    <!-- Include Navigation Bar -->
+    <%- include('nav.html') %>
+
+    <!-- Publication Hero Section -->
+    <section class="publication-hero">
+      <div class="publication-hero-content">
+        <h1>Our Publications</h1>
+        <p>Research Papers and Academic Contributions</p>
+      </div>
+    </section>
+
+    <!-- Publications Grid Section -->
+    <section class="publications-grid">
+      <div class="publication-filters">
+        <button class="filter-btn active" data-filter="all">Show All Articles</button>
+        <button class="filter-btn" data-filter="Patrick Niyishaka">Patrick Niyishaka</button>
+        <button class="filter-btn" data-filter="Rukundo Prince">Rukundo Prince</button>
+        <button class="filter-btn" data-filter="Yvonne Keeza">Yvonne Keeza</button>
+      </div>
+      <div class="publications-container">
+        <!-- First Publication Box -->
+        <div class="publication-box">
+          <div class="col-inner">
+            <h3 class="accordion_title">Machine learning models to predict success of endoscopic sleeve gastroplasty using total and excess weight loss percent achievement: a multicentre study.</h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="authors">Maria Vannucci; Patrick Niyishaka;Toby Collins;María Rita Rodríguez-Luna;Pietro Mascagni; Alexandre Hostettler;Jacques Marescaux;Silvana Perretta. Surg Endosc ; 38(1): 229-239, 2024 01.</span>
+                  <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <div class="accordion-inner">
+                  <p><strong>BACKGROUND:</strong><br>The large amount of heterogeneous data collected in surgical/endoscopic practice calls for data-driven approaches as machine learning (ML) models. The aim of this study was to develop ML models to predict endoscopic sleeve gastroplasty (ESG) efficacy at 12 months defined by total weight loss (TWL) % and excess weight loss (EWL) % achievement. Multicentre data were used to enhance generalizability evaluate consistency among different center of ESG practice and assess reproducibility of the models and possible clinical application. Models were designed to be dynamic and integrate follow-up clinical data into more accurate predictions, possibly assisting management and decision-making.</p>
+                  <p><strong>METHODS:</strong><br>ML models were developed using data of 404 ESG procedures performed at 12 centers across Europe. Collected data included clinical and demographic variables at the time of ESG and at follow-up. Multicentre/external and single center/internal and temporal validation were performed. Training and evaluation of the models were performed on Python's scikit-learn library. Performance of models was quantified as receiver operator curve (ROC-AUC), sensitivity, specificity, and calibration plots.</p>
+                  <p><strong>RESULTS:</strong><br>Multicenter external validation ML models using preoperative data show poor performance. Best performances were reached by linear regression (LR) and support vector machine models for TWL% and EWL%, respectively, (ROC-AUC TWL% 0.87, EWL% 0.86) with the addition of 6-month follow-up data. Single-center internal validation Preoperative data only ML models show suboptimal performance. Early, i.e., 3-month follow-up data addition lead to ROC-AUC of 0.79 (random forest classifiers model) and 0.81 (LR models) for TWL% and EWL% achievement prediction, respectively. Single-center temporal validation shows similar results.</p>
+                  <p><strong>CONCLUSIONS:</strong><br>Although preoperative data only may not be sufficient for accurate postoperative predictions, the ability of ML models to adapt and evolve with the patients changes could assist in providing an effective and personalized postoperative care. ML models predictive capacity improvement with follow-up data is encouraging and may become a valuable support in patient management and decision-making.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Publication Box -->
+        <div class="publication-box">
+          <div class="col-inner">
+            <h3 class="accordion_title">Copy-move forgery detection using image blobs and BRISK feature</h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="authors">Patrick Niyishaka, Chakravarthy Bhagvati. Multimedia Tools and Applications, 79(35), 26045-26059, 2020.</span>
+                  <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <div class="accordion-inner">
+                  <p><strong>ABSTRACT:</strong><br>One of the most frequently used types of digital image forgery is copying one area in the image and pasting it into another area of the same image; this is known as the copy-move forgery. To overcome the limitations of the existing Block-based and Keypoint-based copy-move forgery detection methods, in this paper, we present an effective technique for copy-move forgery detection that utilizes the image blobs and keypoints. The proposed method is based on the image blobs and Binary Robust Invariant Scalable Keypoints (BRISK) feature. It involves the following stages: the regions of interest called image blobs and BRISK feature are found in the image being analyzed; BRISK keypoints that are located within the same blob are identified; finally, the matching process is performed between BRISK keypoints that are located in different blobs to find similar keypoints for copy-move regions. The proposed method is implemented and evaluated on the copy-move forgery standard datasets MICC-F8multi, MICC-F220, and CoMoFoD. The experimental results show that the proposed method is effective for geometric transformation, such as scaling and rotation, and shows robustness to post-processing operation, such as noise addition, blurring, and jpeg compression.</p>
+                  <p><strong>METHOD:</strong><br>The proposed method is based on the image blobs and Binary Robust Invariant Scalable Keypoints (BRISK) feature. It involves the following stages:</p>
+                  <ul>
+                    <li>The regions of interest called image blobs and BRISK feature are found in the image being analyzed</li>
+                    <li>BRISK keypoints that are located within the same blob are identified</li>
+                    <li>The matching process is performed between BRISK keypoints that are located in different blobs to find similar keypoints for copy-move regions</li>
+                  </ul>
+                  <p><strong>CONCLUSION:</strong><br>In this paper, a novel method for copy-move forgery detection based on image blobs and BRISK feature is presented. Image blobs are regions that are different from neighbors at different scales and they present various advantages over image blocks and image segments in CMFD. Edge detection is performed before blob detection to enhance blob localization on foreground objects, and to ensure that the authentic region and its duplicate are located in different blobs. To find copy-move regions we match BRISK keypoints from different blobs. Since the BRISK keypoints located within the same blob are not matched, the number of keypoints to match is dramatically reduced, and the need of the filter algorithm to remove false matches is eliminated. The experimental results show that the proposed technique is effective for geometric transformations and shows robustness to post-processing operations.</p>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/342814515_Copy-move_forgery_detection_using_image_blobs_and_BRISK_feature" target="_blank" class="researchgate-btn">
+                      <i class="fab fa-researchgate"></i> View on ResearchGate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Publication Box -->
+        <div class="publication-box">
+          <div class="col-inner">
+            <h3 class="accordion_title">Digital Image Forensics Technique for Copy-Move Forgery Detection Using DoG and ORB</h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="authors">Patrick Niyishaka, Chakravarthy Bhagvati. ICCVG 2018, Warsaw, Poland, September 17-19, 2018.</span>
+                  <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <div class="accordion-inner">
+                  <p><strong>ABSTRACT:</strong><br>Copy–Move forgery or Cloning is image tampering or alteration by copying one area in an image and pasting it into another area of the same image. Due to the availability of powerful image editing software, the process of malicious manipulation, editing and creating fake images has been tremendously simple. Thus, there is a need of robust PBIF (Passive–Blind Image Forensics) techniques to validate the authenticity of digital images. In this paper, CMFD (Copy–Move Forgery Detection) using DoG (Difference of Gaussian) blob detector to detect regions in image, with rotation invariant and resistant to noise feature detection technique called ORB (Oriented Fast and Rotated Brief) is implemented, evaluated on different standard datasets and experimental results are presented.</p>
+                  <p><strong>PROPOSED METHOD:</strong><br>Implementation steps and algorithm are discussed in this section. There are three main steps:</p>
+                  <ul>
+                    <li>Sobel edge detection</li>
+                    <li>Feature extraction DoG and ORB</li>
+                    <li>Feature matching</li>
+                  </ul>
+                  <p>To tackle the Copy–Move forgery detection Major challenges, we aim to combine block-based and keypoint based detection techniques in a single model. Block-based techniques exhibit some limitations, selecting the size of the block is difficult, the matching process becomes computationally intensive with small blocks, larger blocks cannot be used to detect small forged areas, and uniform regions in the original image will be shown as duplicates. To cope with the above limitations, we use blobs instead of image blocks.</p>
+                  <p>For many keypoint based techniques, to eliminate false matches after keypoints are matched, RANSAC (Random Sample Consensus) algorithm is applied. Our approach avoids the use of RANSAC to remove false matches. Images used as input to evaluate our model are from standard datasets known in the literature, and large images are reduced to have a maximum size of 1000 × 1000 pixels.</p>
+                  <p><strong>CONCLUSION:</strong><br>A new model for Copy–Move Forgery Detection based on DoG blobs detector and ORB feature detection has been proposed. The proposed technique shows effectiveness to diverse operative scenarios such as multiple copy–move forgeries in same image and geometric transformations including rotation and scaling. Since original region and moved region always resulted in different blobs, we only matched ORB feature descriptors from different blobs, hence computational time, the number of features to match and false matches reduced considerably. Combining DoG and ORB feature merges the advantage of block-based and keypoint based forgery detection methods in a single model. Future work will be mainly dedicated to the elimination of human interpretation of the output of Copy–Move Forgery Detection techniques to enable performance evaluation on very large datasets.</p>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/327638414_Digital_Image_Forensics_Technique_for_Copy-Move_Forgery_Detection_Using_DoG_and_ORB_International_Conference_ICCVG_2018_Warsaw_Poland_September_17_-_19_2018_Proceedings" target="_blank" class="researchgate-btn">
+                      <i class="fab fa-researchgate"></i> View on ResearchGate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Publication -->
+        <div class="publication-box">
+          <div class="col-inner">
+            <h3 class="accordion_title">Image splicing detection technique based on Illumination-Reflectance model and LBP</h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="authors">Patrick Niyishaka, Chakravarthy Bhagvati. University of Hyderabad.</span>
+                  <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <div class="accordion-inner">
+                  <p><strong>Abstract:</strong></p>
+                  <p>A Copy-create digital image forgery is image tampering that merges two or more areas of images from different sources into one composite image; it is also known as image splicing. Excellent forgeries are so tricky that they are not noticeable to the naked eye and don't reveal traces of tampering to traditional image tamper detection techniques. To tackle this image splicing detection problem, machines learning-based techniques are used to instantly discriminate between the authentic and forged image. Numerous image forgery detection methods to detect and localize spliced areas in the composite image have been proposed. However, the existing methods with high detection accuracy are computation-ally expensive since most of them are based on hybrid feature set or rely on the complex deep learning models, which are very expensive to train, run on expensive GPUs, and require a very large amount of data to perform better. In this paper, we propose a simple and computationally efficient image splicing forgery detection that considers a trade-off between performance and the cost to the users. Our method involves the following steps: first, luminance and chrominance are found from the input image; second, illumination is estimated from Luminance using Illumination-Reflectance model; third, Local Binary Patterns normalized histogram for illumination and Chrominance is computed and used as the feature vector for classification using the following machine learning algorithms: Support Vector Machine, Linear Discriminant Analysis, Logistic Regression, K-Nearest Neighbors, Decision Tree, and Naive Bayes. Extensive experiments on the public dataset CASIA v2.0 show that the new algorithm is computationally efficient and effective for image splicing tampering detection.</p>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/344216893_Image_splicing_detection_technique_based_on_Illumination-Reflectance_model_and_LBP" target="_blank" class="researchgate-btn">
+                      <i class="fab fa-researchgate"></i> View on ResearchGate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth Publication -->
+        <div class="publication-box">
+          <div class="col-inner">
+            <h3 class="accordion_title">Geometric transformations parameters estimation from copy-move forgery using image blobs and keypoints</h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="authors">Patrick Niyishaka, Chakravarthy Bhagvati. University of Hyderabad. Multimedia Tools and Applications, 81(7), 2022.</span>
+                  <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <div class="accordion-inner">
+                  <p><strong>Abstract:</strong></p>
+                  <p>A copy-move forgery is a passive tampering wherein one or more regions have been copied and pasted within the same image. Often, geometric transformations, including scale, rotation, and rotation+scale are applied to the forged areas to conceal the counterfeits to the copy-move forgery detection methods. Recently, copy-move forgery detection using image blobs have been used to tackle the limitation of the existing detection methods. However, the main limitation of blobs-based copy-move forgery detection methods is the inability to perform the geometric transformation estimation. To tackle the above-mentioned limitation, this article presents a technique that detects copy-move forgery and estimates the geometric transformation parameters between the authentic region and its duplicate using image blobs and scale-rotation invariant keypoints. The proposed algorithm involves the following steps: image blobs are found in the image being analyzed; scale-rotation invariant features are extracted; the keypoints that are located within the same blob are identified; feature matching is performed between keypoints that are located within different blobs to find similar features; finally, the blobs with matched keypoints are post-processed and a 2D affine transformations is computed to estimate the geometric transformation parameters. Our technique is flexible and can easily take in various scale-rotation invariant keypoints including AKAZE, ORB, BRISK, SURF, and SIFT to enhance the effectiveness. The proposed algorithm is implemented and evaluated on images forged with copy-move regions combined with geometric transformation from standard datasets. The experimental results indicate that the new algorithm is effective for geometric transformation parameters estimation.</p>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/355360973_Geometric_transformations_parameters_estimation_from_copy-move_forgery_using_image_blobs_and_keypoints" target="_blank" class="researchgate-btn">
+                      <i class="fab fa-researchgate"></i> View on ResearchGate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sixth Publication -->
+        <div class="publication-box">
+          <div class="col-inner">
+            <h3 class="accordion_title">PREOPERATIVE STATISTICAL MODELS TO PREDICT SUCCESS OF ENDOSCOPIC SLEEVE GASTROPLASTY AT 1 YEAR: RETROSPECTIVE STUDY ON 200 PATIENTS IN A SINGLE CENTRE</h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="authors">Maria Vannucci (University of Turin), Patrick Niyishaka (University of Hyderabad), Toby Collins (Research Institute against Digestive Cancer), Pietro Mascagni (Policlinico Universitario Agostino Gemelli). Gastrointestinal Endoscopy, 95(6): AB246, 2022.</span>
+                  <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <div class="accordion-inner">
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/361139507_PREOPERATIVE_STATISTICAL_MODELS_TO_PREDICT_SUCCESS_OF_ENDOSCOPIC_SLEEVE_GASTROPLASTY_AT_1_YEAR_RETROSPECTIVE_STUDY_ON_200_PATIENTS_IN_A_SINGLE_CENTRE" target="_blank" class="researchgate-btn">
+                      <i class="fab fa-researchgate"></i> View on ResearchGate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seventh Publication -->
+        <div class="publication-box">
+          <div class="col-inner">
+            <h3 class="accordion_title">COVID-19 detection from chest X-ray images using CLAHE-YCrCb, LBP, and machine learning algorithms</h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="authors">Rukundo Prince, Zhendong Niu, Zahid Younas (Beijing Institute of Technology), Masabo Emmanuel. BMC Bioinformatics, 25(1), 2024.</span>
+                  <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <div class="accordion-inner">
+                  <p><strong>Background:</strong></p>
+                  <p>COVID-19 is a disease that caused a contagious respiratory ailment that killed and infected hundreds of millions. It is necessary to develop a computer-based tool that is fast, precise, and inexpensive to detect COVID-19 efficiently. Recent studies revealed that machine learning and deep learning models accurately detect COVID-19 using chest X-ray (CXR) images. However, they exhibit notable limitations, such as a large amount of data to train, larger feature vector sizes, enormous trainable parameters, expensive computational resources (GPUs), and longer run-time.</p>
+                  <p><strong>Results:</strong></p>
+                  <p>In this study, we proposed a new approach to address some of the above-mentioned limitations. The proposed model involves the following steps: First, we use contrast limited adaptive histogram equalization (CLAHE) to enhance the contrast of CXR images. The resulting images are converted from CLAHE to YCrCb color space. We estimate reflectance from chrominance using the Illumination–Reflectance model. Finally, we use a normalized local binary patterns histogram generated from reflectance (Cr) and YCb as the classification feature vector. Decision tree, Naive Bayes, support vector machine, K-nearest neighbor, and logistic regression were used as the classification algorithms. The performance evaluation on the test set indicates that the proposed approach is superior, with accuracy rates of 99.01%, 100%, and 98.46% across three different datasets, respectively. Naive Bayes, a probabilistic machine learning algorithm, emerged as the most resilient.</p>
+                  <p><strong>Conclusion:</strong></p>
+                  <p>Our proposed method uses fewer handcrafted features, affordable computational resources, and less runtime than existing state-of-the-art approaches. Emerging nations where radiologists are in short supply can adopt this prototype. We made both coding materials and datasets accessible to the general public for further improvement.</p>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/377469895_COVID-19_detection_from_chest_X-ray_images_using_CLAHE-YCrCb_LBP_and_machine_learning_algorithms" target="_blank" class="researchgate-btn">
+                      <i class="fab fa-researchgate"></i> View on ResearchGate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Eighth Publication -->
+        <div class="publication-box">
+          <div class="col-inner">
+            <h3 class="accordion_title">Interpretable COVID-19 chest X-ray detection based on handcrafted feature analysis and sequential neural network</h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="authors">Rukundo Prince, Zhendong Niu, Zahid Younas (Beijing Institute of Technology), James Chambua (University of Dar es Salaam). Computers in Biology and Medicine, 186(1):109659, 2025.</span>
+                  <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <div class="accordion-inner">
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/388355259_Interpretable_COVID-19_chest_X-ray_detection_based_on_handcrafted_feature_analysis_and_sequential_neural_network" target="_blank" class="researchgate-btn">
+                      <i class="fab fa-researchgate"></i> View on ResearchGate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ninth Publication -->
+        <div class="publication-box">
+          <div class="col-inner">
+            <h3 class="accordion_title">Deep learning techniques for rating prediction: a survey of the state-of-the-art</h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="authors">Zahid Younas Khan, Zhendong Niu, Sulis Sandiwarno & Rukundo Prince</span>
+                  <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <div class="accordion-inner">
+                  <p><strong>Abstract:</strong></p>
+                  <p>With the growth of online information, varying personalization drifts and volatile behaviors of internet users, recommender systems are effective tools for information filtering to overcome the information overload problem. Recommender systems utilize rating prediction approaches i.e. predicting the rating that a user will give to a particular item, to generate ranked lists of items according to the preferences of each user in order to make personalized recommendations. Although previous recommendation systems are effective in creating attired recommendations, however, they still suffer from different types of challenges such as accuracy, scalability, cold-start, and data sparsity. In the last few years, deep learning has attained substantial interest in various research areas such as computer vision, speech recognition, and natural language processing. Deep learning based approaches are vigorous in not only performance improvement but also to feature representations learning from the scratch. The impact of deep learning is also prevalent, recently validating its efficacy on information retrieval and recommender systems research. In this study, a comprehensive review of deep learning-based rating prediction approaches is provided to help out new researchers interested in the subject. More concretely, the classification of deep learning-based recommendation/rating prediction models is provided and articulated along with an extensive summary of the state-of-the-art. Lastly, new trends are exposited with new perspectives pertaining to this novel and exciting development of the field.</p>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/343758499_Deep_learning_techniques_for_rating_prediction_a_survey_of_the_state-of-the-art" target="_blank" class="researchgate-btn">
+                      <i class="fab fa-researchgate"></i> View on ResearchGate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tenth Publication -->
+        <div class="publication-box">
+          <div class="col-inner">
+            <h3 class="accordion_title">Cloud Computing as a Suitable Alternative to the Traditional On-Premise ERP and Massive Data Storage</h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="authors">MBANZABUGABO Jean Baptiste, RUKUNDO Prince</span>
+                  <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <div class="accordion-inner">
+                  <p><strong>Abstract:</strong></p>
+                  <p>This paper sought to aver Cloud Computing as a Suitable Alternative to the Traditional On-Premise ERP and Massive Data Storage based on the information from the institutions that implement ERP system, government and private organs that consider the adoption of cloud ERP and professionals comments from cloud technology media blogs. In this gamut, the genuine number of detriments of Onpremise ERP deployment in today technology arena and subsidies of Cloud Based ERP adoption were sought. The researcher, after getting the above information conducted as survey about this census to establish the potential of Cloud Computing based ERP as a suitable and alternative use of the On-Premise ERP and Massive Data Storage, The study had three objectives including examining the extent at which On-premise and Cloud ERP is being adopted and establishing whether people are likely to adopt Cloud based ERP, determine the factors affecting Cloud computing System adoption, indicating the factors; that are important for them to adopt or not adopt the Cloud computing Based ERP.</p>
+                  <div class="publication-links">
+                    <a href="https://ijictm.org/pdf/folder-1/2017-01-11-14-18-06.pdf" target="_blank" class="researchgate-btn">
+                      <i class="fas fa-file-pdf"></i> View PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Eleventh Publication -->
+        <div class="publication-box">
+          <div class="col-inner">
+            <h3 class="accordion_title">Convolution Neural Network to Uncover Bank's Hidden Patterns and unknown Correlation</h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="authors">MBANZABUGABO Jean Baptiste, RUKUNDO Prince</span>
+                  <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <div class="accordion-inner">
+                  <p><strong>Publication Date:</strong> 2018</p>
+                  <div class="publication-links">
+                    <a href="#" target="_blank" class="researchgate-btn">
+                      <i class="fas fa-file-pdf"></i> View PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Twelfth Publication -->
+        <div class="publication-box">
+          <div class="col-inner">
+            <h3 class="accordion_title">Global Registration of Kidneys in 3D Ultrasound and CT images</h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="authors">William Ndzimbong, Nicolas Thome, Cyril Fourniol, Yvonne Keeza, Benoit Sauer, Jacques Marescaux, Daniel George, Alexandre Hostettler, Toby Collins. IABM - Colloque Français d'Intelligence Artificielle en Imagerie Biomédicale, March 2024.</span>
+                  <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <div class="accordion-inner">
+                  <p><strong>Abstract:</strong></p>
+                  <p>Objective: automatic global kidney registration in 3D US and CT images. Challenges: (i) domain difference between the two modalities, (ii) strong bilateral symmetry in the kidney shape, causing the failures of the existing methods. Contributions: (i) Introducing a landmark matching approach using semantic labels, eliminating the need for feature descriptors, and enabling global robust alignment through an exhaustive search method, (ii) presenting a global registration method that may be combined with any registration refinement method (surface-based and intensity-based), (iii) to the best of our knowledge, the first method for US/CT global registration of the kidney, facilitating fusion imaging for renal procedures without manual registration.</p>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/379374654_Global_Registration_of_Kidneys_in_3D_Ultrasound_and_CT_images" target="_blank" class="researchgate-btn">
+                      <i class="fab fa-researchgate"></i> View on ResearchGate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thirteenth Publication -->
+        <div class="publication-box">
+          <div class="col-inner">
+            <h3 class="accordion_title">Global registration of kidneys in 3D ultrasound and CT images</h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="authors">William Ndzimbong, Nicolas Thome, Cyril Fourniol, Yvonne Keeza, Benoît Sauer, Jacques Marescaux, Daniel George, Alexandre Hostettler, Toby Collins. International Journal of Computer Assisted Radiology and Surgery 20(2), September 2024. DOI:10.1007/s11548-024-03255-3</span>
+                  <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <div class="accordion-inner">
+                  <p><strong>Abstract:</strong></p>
+                  <p>Automatic registration between abdominal ultrasound (US) and computed tomography (CT) images is needed to enhance interventional guidance of renal procedures, but it remains an open research challenge. We propose a novel method that doesn't require an initial registration estimate (a global method) and also handles registration ambiguity caused by the organ's natural symmetry. Combined with a registration refinement algorithm, this method achieves robust and accurate kidney registration while avoiding manual initialization. We propose solving global registration in a three-step approach: (1) Automatic anatomical landmark localization, where 2 deep neural networks (DNNs) localize a set of landmarks in each modality. (2) Registration hypothesis generation, where potential registrations are computed from the landmarks with a deterministic variant of RANSAC. Due to the Kidney's strong bilateral symmetry, there are usually 2 compatible solutions. Finally, in Step (3), the correct solution is determined automatically, using a DNN classifier that resolves the geometric ambiguity. The registration may then be iteratively improved with a registration refinement method. Results are presented with state-of-the-art surface-based refinement—Bayesian coherent point drift (BCPD). This automatic global registration approach gives better results than various competitive state-of-the-art methods, which, additionally, require organ segmentation. The results obtained on 59 pairs of 3D US/CT kidney images show that the proposed method, combined with BCPD refinement, achieves a target registration error (TRE) of an internal kidney landmark (the renal pelvis) of 5.78 mm and an average nearest neighbor surface distance (nndist) of 2.42 mm. This work presents the first approach for automatic kidney registration in US and CT images, which doesn't require an initial manual registration estimate to be known a priori. The results show a fully automatic registration approach with performances comparable to manual methods is feasible.</p>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/383835048_Global_registration_of_kidneys_in_3D_ultrasound_and_CT_images" target="_blank" class="researchgate-btn">
+                      <i class="fab fa-researchgate"></i> View on ResearchGate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourteenth Publication -->
+        <div class="publication-box">
+          <div class="col-inner">
+            <h3 class="accordion_title">Automatic diagnosis of abdominal pathologies in untrimmed ultrasound videos</h3>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span class="authors">Güinther Saibro, Yvonne Keeza, Benoît Sauer, Jacques Marescaux, Michele Diana, Alexandre Hostettler, Toby Collins. International Journal of Computer Assisted Radiology and Surgery, March 2025. DOI:10.1007/s11548-025-03334-z</span>
+                  <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+                <div class="accordion-inner">
+                  <p><strong>Abstract:</strong></p>
+                  <p>Despite major advances in Computer Assisted Diagnosis (CAD), the need for carefully labeled training data remains an important clinical translation barrier. This work aims to overcome this barrier for ultrasound video-based CAD, using video-level classification labels combined with a novel training strategy to improve the generalization performance of state-of-the-art (SOTA) video classifiers. SOTA video classifiers were trained and evaluated on a novel ultrasound video dataset of liver and kidney pathologies, and they all struggled to generalize, especially for kidney pathologies. A new training strategy is presented, wherein a frame relevance assessor is trained to score the video frames in a video by diagnostic relevance. This is used to automatically generate diagnostically-relevant video clips (DR-Clips), which guide a video classifier during training and inference. Using DR-Clips with a Video Swin Transformer, we achieved a 0.92 ROC-AUC for kidney pathology detection in videos, compared to 0.72 ROC-AUC with a Swin Transformer and standard video clips. For liver steatosis detection, due to the diffuse nature of the pathology, the Video Swin Transformer, and other video classifiers, performed similarly well, generally exceeding a 0.92 ROC-AUC. In theory, video classifiers, such as video transformers, should be able to solve ultrasound CAD tasks with video labels. However, in practice, video labels provide weaker supervision compared to image labels, resulting in worse generalization, as demonstrated. The additional frame guidance provided by DR-Clips enhances performance significantly. The results highlight current limits and opportunities to improve frame guidance.</p>
+                  <div class="publication-links">
+                    <a href="https://www.researchgate.net/publication/389764131_Automatic_diagnosis_of_abdominal_pathologies_in_untrimmed_ultrasound_videos" target="_blank" class="researchgate-btn">
+                      <i class="fab fa-researchgate"></i> View on ResearchGate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Include Footer -->
+    <%- include('footer.ejs') %>
+  </body>
+</html>

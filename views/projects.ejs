@@ -1,0 +1,89 @@
+<!-- views/about.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - KezaTech</title>
+    <link rel="icon" type="image/favicon.png" href="/images/favicon.png">
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Include Navigation Bar -->
+    <%- include('nav.html') %>
+
+    <!-- Project Hero Section -->
+    <section class="project-hero">
+      <div class="project-hero-content">
+        <h1>Our Projects</h1>
+        <p>Explore our innovative research and development projects in medical imaging, AI diagnostics, and healthcare analytics.</p>
+      </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section class="projects-grid">
+      <div class="projects-container">
+        <!-- AI Diagnostic System -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/images/ai-medical.jpg" alt="AI Diagnostic System">
+            <div class="project-overlay">
+              <a href="https://www.researchgate.net/publication/379374654" target="_blank" class="view-project">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>AI Diagnostic System</h3>
+            <p>Advanced AI-powered diagnostic system for early disease detection and medical image analysis.</p>
+            <a href="https://www.researchgate.net/publication/379374654" target="_blank" class="project-link">
+              Learn More <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Medical Imaging Analysis -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/images/AI_radiology.png" alt="Medical Imaging Analysis">
+            <div class="project-overlay">
+              <a href="https://www.researchgate.net/publication/383835048" target="_blank" class="view-project">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Medical Imaging Analysis</h3>
+            <p>Innovative approach to medical image processing using deep learning and computer vision.</p>
+            <a href="https://www.researchgate.net/publication/383835048" target="_blank" class="project-link">
+              Learn More <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Healthcare Data Analytics -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/images/about1.jpg" alt="Healthcare Data Analytics">
+            <div class="project-overlay">
+              <a href="https://www.researchgate.net/publication/389764131" target="_blank" class="view-project">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Healthcare Data Analytics</h3>
+            <p>Comprehensive healthcare data analysis framework using machine learning algorithms.</p>
+            <a href="https://www.researchgate.net/publication/389764131" target="_blank" class="project-link">
+              Learn More <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Include Footer -->
+    <%- include('footer.ejs') %>
+  </body>
+</html>

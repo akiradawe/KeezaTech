@@ -1,0 +1,76 @@
+<!-- views/contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - KezaTech</title>
+    <link rel="icon" type="image/favicon.png" href="/images/favicon.png">
+    <link rel="stylesheet" href="/styles/style.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Include Navigation Bar -->
+    <%- include('nav.html') %>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+      <div class="services-hero-content">
+        <h1>Our Services</h1>
+        <p>AI-Powered Healthcare Solutions</p>
+      </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="services-grid">
+      <div class="services-container">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-lungs"></i>
+          </div>
+          <div class="service-content">
+            <h3><strong>Diagnose Pneumonia, Tuberculosis using chest X-rays images</strong></h3>
+            <p>Our AI models analyze chest X-ray images to accurately diagnose pneumonia and tuberculosis. By leveraging cutting-edge technology, we enhance diagnostic precision, enabling healthcare professionals to make informed decisions quickly. This timely intervention can significantly improve patient outcomes and streamline treatment processes.</p>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <div class="service-content">
+            <h3><strong>Ocular Disease Detection</strong></h3>
+            <p>Our advanced AI models analyze Retinal images to accurately detect Cataracts, Diabetic Retinopathy, and Glaucoma. Using cutting-edge technology, we enhance diagnostic accuracy, allowing healthcare professionals to make quicker, informed decisions. Early detection can significantly improve patient outcomes and treatment efficiency.</p>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-virus"></i>
+          </div>
+          <div class="service-content">
+            <h3><strong>COVID-19 Detection Using Chest X-rays</strong></h3>
+            <p>Our AI-powered models analyze chest X-ray images to detect COVID-19 with high accuracy. By quickly identifying patterns associated with the virus, these tools assist healthcare professionals in diagnosing patients more efficiently. This rapid detection helps facilitate timely treatment and better management of cases, ultimately improving patient outcomes during critical times.</p>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-microscope"></i>
+          </div>
+          <div class="service-content">
+            <h3><strong>Segmentation for Liver and Breast Masses</strong></h3>
+            <p>Our advanced AI models utilize segmentation techniques to accurately identify and delineate liver and breast masses in medical images. This precision enhances diagnostic accuracy, enabling healthcare professionals to make informed decisions for effective treatment planning and patient care. By streamlining the analysis process, we support timely interventions and improved outcomes for patients.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Include Footer -->
+    <%- include('footer.ejs') %>
+  </body>
+</html>

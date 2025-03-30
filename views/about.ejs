@@ -1,0 +1,47 @@
+<!-- views/about.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - KezaTech</title>
+    <link rel="icon" type="image/favicon.png" href="/images/favicon.png">
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <!-- Include Navigation Bar -->
+    <%- include('nav.html') %>
+
+    <!-- Hero Section -->
+    <section class="about-hero" style="background-color: #000;">
+      <div class="about-hero-content">
+        <h1 style="color: #fff;">About Us</h1>
+        <p style="color: #fff;">AI-driven healthcare innovators are committed to revolutionizing healthcare with cutting-edge technology. Specializing in telemedicine, medical imaging, data analytics, and predictive solutions, we aim to boost diagnostic precision, optimize medical workflows, and elevate patient care outcomes.</p>
+      </div>
+    </section>
+
+
+    <!-- Vision & Mission Section -->
+    <section class="vision-mission">
+      <div class="vision-box">
+        <h2>Our Vision</h2>
+        <p>Anticipates a future where AI transforms healthcare by democratizing advanced AI tools, ensuring accessibility and affordability for all.</p>
+      </div>
+      <div class="mission-box">
+        <h2>Our Mission</h2>
+        <p>Equip medical professionals with the necessary tools to provide exceptional patient care and to foster pioneering research that advances the frontiers of medical science.</p>
+      </div>
+    </section>
+
+    <!-- Service Highlight Section -->
+    <section class="service-highlight">
+      <div class="service-content">
+        <h2>Our Commitment to Excellence</h2>
+        <p style="text-align: center;">At KeezaTech, we're committed to revolutionizing healthcare through AI innovation. Our teleradiology service exemplifies this commitment by combining cutting-edge technology with expert medical knowledge to deliver accurate, timely, and accessible diagnostic services. We believe that everyone deserves access to high-quality healthcare, and our AI-powered solutions are making this vision a reality.</p>
+      </div>
+    </section>
+
+    <!-- Include Footer -->
+    <%- include('footer.ejs') %>
+  </body>
+</html>
